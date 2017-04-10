@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_marginTop="40dp"
+    android:paddingTop="20dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_scroll"
+        >
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:background="#Eeeeee"
+            android:id="@+id/activity_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:animateLayoutChanges="true"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp">
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:id="@+id/cardview1"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="2dp"
+                android:layout_margin="2dp"
+                android:layout_height="wrap_content">
+                <com.gjiazhe.panoramaimageview.PanoramaImageView
+                    android:id="@+id/panorama_image_view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/poster1"
+                    app:piv_enablePanoramaMode="true"
+                    app:piv_show_scrollbar="false"
+                    app:piv_invertScrollDirection="false"/>
+            </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:id="@+id/cardview2"
+        android:layout_below="@id/cardview1"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="2dp"
+        android:layout_margin="2dp"
+        android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/LinearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:id="@+id/LinearLayout10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/counter"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/txtTimerDay"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffc300"
+                        android:textSize="35dp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/txt_TimerDay"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="Days"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/LinearLayout11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/counter"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/txtTimerHour"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:gravity="center"
+
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#33caff"
+                        android:textSize="35dp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/txt_TimerHour"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="Hours"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/LinearLayout12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/counter"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/txtTimerMinute"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:gravity="center"
+
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#19B025"
+                        android:textSize="35dp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/txt_TimerMinute"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="Minutes"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/LinearLayout13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/counter"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/txtTimerSecond"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:gravity="center"
+
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ff3374"
+                        android:textSize="35dp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/txt_TimerSecond"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="Seconds"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+    </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:id="@+id/cardview3"
+                android:layout_margin="5dp"
+                android:layout_below="@id/cardview2"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="4dp"
+                android:layout_height="wrap_content">
+                <com.daimajia.slider.library.SliderLayout
+                    android:id="@+id/slider"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
+
+
