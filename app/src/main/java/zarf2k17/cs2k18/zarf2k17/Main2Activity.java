@@ -237,6 +237,7 @@ public class Main2Activity extends AppCompatActivity
             dialog.show();
 //            in = (EditText)dialog.findViewById(R.id.input);
   //          sp = (Spinner)dialog.findViewById(R.id.sponner);
+            // if you can see this, its working
         }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
