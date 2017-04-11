@@ -200,7 +200,7 @@ public class Main2Activity extends AppCompatActivity
         } else if (id == R.id.nav_team) {
            startActivity(new Intent(this,OurTeam.class));
         } else if (id == R.id.nav_developer) {
-
+            startActivity(new Intent(this,Developers.class));
         } else if (id == R.id.nav_query) {
             builder = new AlertDialog.Builder(this);
             LayoutInflater layoutInflater = getLayoutInflater();
