@@ -29,7 +29,7 @@ import com.gjiazhe.panoramaimageview.PanoramaImageView;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
-
+/** mergin test by msaqib*/
 public class Main2Activity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     private TextView txtTimerDay, txtTimerHour, txtTimerMinute, txtTimerSecond;
