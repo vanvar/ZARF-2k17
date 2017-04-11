@@ -19,7 +19,6 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.daimajia.slider.library.SliderLayout;
 import com.daimajia.slider.library.SliderTypes.BaseSliderView;
@@ -196,7 +195,8 @@ public class Main2Activity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_events) {
-            Toast.makeText(this,"Will be updated soon....!",Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this,"Will be updated soon....!", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(this,Events.class));
         } else if (id == R.id.nav_team) {
            startActivity(new Intent(this,OurTeam.class));
         } else if (id == R.id.nav_developer) {

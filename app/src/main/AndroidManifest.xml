@@ -27,14 +27,9 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".Events"
-            android:label="Events"
-            android:parentActivityName=".Main2Activity" />
-        <activity
-            android:name=".Developers"
-            android:label="Developers"
-            android:parentActivityName=".Main2Activity" />
+        <activity android:name=".Events"
+            android:theme="@style/AppBaseTheme"
+            android:parentActivityName=".Main2Activity"></activity>
         <activity
             android:name=".OurTeam"
             android:label="Our Team"
