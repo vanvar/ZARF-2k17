@@ -14,4 +14,10 @@
     <string name="option3">Option 3</string>-->
     <string name="details">Details</string>
     <string name="info">CS Undergrad\nZHCET, AMU\nContact : 8439187336</string>
+
+
+    <string name="url1">http://blog.meraevents.com/wp-content/uploads/2015/10/Photography-b.jpg</string>
+    <string name="url2">http://i0.wp.com/eventmagazine.townscript.com/wp-content/uploads/2016/04/workshops11.png?fit=1080%2C9999</string>
+    <string name="url3">http://cbit.ac.in/files/synapse/dance.jpg</string>
+    <string name="url4">http://www.literarychicago.com/wp-content/uploads/2014/12/Holiday-Mic.jpg</string>
 </resources>

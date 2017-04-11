@@ -15,6 +15,10 @@ import butterknife.ButterKnife;
 
 public class Events extends DrawerActivity {
 
+
+    public String events_category[] = {"Online", "Technical", "Cultural", "Literary"};
+    public int color_id[] = {R.color.green, R.color.blue, R.color.cyan, R.color.red};
+    public int url_string[] = {R.string.url1, R.string.url2, R.string.url3, R.string.url4};
     @BindView(R.id.materialViewPager)
     MaterialViewPager mViewPager;
 
@@ -35,17 +39,7 @@ public class Events extends DrawerActivity {
 
             @Override
             public Fragment getItem(int position) {
-                switch (position % 4) {
-                    //case 0:
-                    //    return RecyclerViewFragment.newInstance();
-                    //case 1:
-                    //    return RecyclerViewFragment.newInstance();
-                    //case 2:
-                    //    return WebViewFragment.newInstance();
-                    default:
-                        return RecyclerViewFragment.newInstance();
-
-                }
+                return RecyclerViewFragment.newInstance();
             }
 
             @Override
@@ -55,45 +49,14 @@ public class Events extends DrawerActivity {
 
             @Override
             public CharSequence getPageTitle(int position) {
-                switch (position % 4) {
-                    case 0:
-                        return "Online";
-                    case 1:
-                        return "Cultural";
-                    case 2:
-                        return "Technical";
-                    case 3:
-                        return "Literary";
-                }
-                return "";
+                return events_category[position % 4];
             }
         });
 
         mViewPager.setMaterialViewPagerListener(new MaterialViewPager.Listener() {
             @Override
             public HeaderDesign getHeaderDesign(int page) {
-                switch (page) {
-                    case 0:
-                        return HeaderDesign.fromColorResAndUrl(
-                                R.color.green,
-                                "http://phandroid.s3.amazonaws.com/wp-content/uploads/2014/06/android_google_moutain_google_now_1920x1080_wallpaper_Wallpaper-HD_2560x1600_www.paperhi.com_-640x400.jpg");
-                    case 1:
-                        return HeaderDesign.fromColorResAndUrl(
-                                R.color.blue,
-                                "http://www.hdiphonewallpapers.us/phone-wallpapers/540x960-1/540x960-mobile-wallpapers-hd-2218x5ox3.jpg");
-                    case 2:
-                        return HeaderDesign.fromColorResAndUrl(
-                                R.color.cyan,
-                                "http://www.droid-life.com/wp-content/uploads/2014/10/lollipop-wallpapers10.jpg");
-                    case 3:
-                        return HeaderDesign.fromColorResAndUrl(
-                                R.color.red,
-                                "http://www.tothemobile.com/wp-content/uploads/2014/07/original.jpg");
-                }
-
-                //execute others actions if needed (ex : modify your header logo)
-
-                return null;
+                return HeaderDesign.fromColorResAndUrl(color_id[page], getString(url_string[page]));
             }
         });
 
