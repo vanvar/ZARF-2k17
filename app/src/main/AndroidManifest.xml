@@ -29,12 +29,11 @@
         </activity>
         <activity android:name=".Events"
             android:label="Events"
-            android:theme="@style/AppBaseTheme"
-            android:parentActivityName=".Main2Activity">
+            android:parentActivityName=".Main2Activity"
+            android:theme="@style/AppBaseTheme">
         </activity>
         <activity android:name=".Developers"
             android:label="Developers"
-            android:theme="@style/DevelopersTheme"
             android:parentActivityName=".Main2Activity">
         </activity>
         <activity
